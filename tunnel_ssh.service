@@ -1,0 +1,11 @@
+[Unit]
+Description=SSH tunnel
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+ExecStart=/usr/lib/autossh/autossh -M 5566 -NR 9090:localhost:22 lausai360@35.194.215.121
+User=sam
+
+[Install]
+WantedBy=multi-user.target
