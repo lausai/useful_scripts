@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=my auto start
+Exec=/home/sam/.config/autostart/autostart.sh
+Type=Application
+X-GNOME-Autostart-enabled=true
